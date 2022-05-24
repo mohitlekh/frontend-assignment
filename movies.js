@@ -45,3 +45,18 @@ async function movies(token){
 }
 let access = window.localStorage.getItem("token");
 movies(access);
+
+
+let changeTheme = document.querySelector('.btn-theme');
+let flag = true;
+changeTheme.addEventListener('click',()=>{
+  const bodyElement = document.getElementById("BODY");
+  console.log(bodyElement)
+  if(flag){bodyElement.classList.add("body-color-dark");
+  flag = false;
+  }
+  else{
+    bodyElement.classList.remove("body-color-dark")
+    flag = true;
+  }
+})

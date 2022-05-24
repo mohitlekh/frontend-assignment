@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap');
+body{
+   color: #093545;
+}
+.headerTitle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    border: #093545 1px solid;
+    
+}
+.logo{
+   width: 6vw; 
+}
+.col col_left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    
+}
+.img_left{
+    margin-left: -20%;
+    height: 80vh;
+}
+
+
+/*links for movies page*/
+.links{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex: 1;
+    margin-right: 40px;
+}
+.home{
+    margin: 0px 5px;
+}
+.homelink,
+.logoutlink{
+    text-decoration:none;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    font-size:20px;
+    border: #0935453e solid 0.5px;
+    border-radius: 50px;
+}
+
+
+/*Social Media Icons*/
+.social_media{
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: end;
+}
+.fb,
+.in,
+.tw{
+    height: 40px;
+    margin: 10px;
+}
+
+
+/*form and control form */
+.col-right{
+    margin-left: -20%;
+    margin-right: 10%;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signUp{
+    height: 70vh;
+    width: 100%;
+
+}
+.formTitle{
+    font-size: 40px;
+    font-weight: 100;
+}
+.userName{
+    padding: 10px;
+}
+.userPass{
+    padding: 10px;
+}
+.loginBtn{
+    padding: 10px;
+}
+.btn-primary{
+    width: 100% !important;
+    border-radius: 50px!important;
+}
+#signInMsg{
+    color: rgb(202, 27, 27);
+    width: 50% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-size: 20px !important;
+    font-weight: 100;
+    padding: 2px 5px;
+}
+
+#msgToRef{
+    color: rgb(202, 27, 27);
+    width: 50% !important;
+    font-size: 20px !important;
+    font-weight: 100;
+    padding: 2px 5px;
+}
+/*footer */
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    left: 0px;
+    top: 93vh;
+    border: 1px;
+    background-color: #20df8061;
+    background-blend-mode: soft-light;
+}
+
+@media (max-width:680px){
+
+    .headerTitle{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 100;
+
+        
+    }
+    .logo{
+       width: 6vw; 
+    }
+    .col col_left{
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        
+    }
+    .img_left{
+        width: 100%;
+        margin-left: -30%;
+        height: 40vh;
+    }
+    
+}
+
+
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background: none;
+    border: none;
+    z-index: 10;
+    transition: all 0.25s;
+    display: none;
+  }
+  
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+  
+  .hamburger-middle {
+    transform: translateY(7px);
+  }
+  
+  .hamburger-bottom {
+    transform: translateY(14px);
+  }
+  
+  .open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+  }
+  
+  .open .hamburger-middle {
+    display: none;
+  }
+  
+  .open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    position: fixed;
+    top: 85px;
+    right: 0;
+    background-color: #fff;
+    color: #000;
+    width: 90%;
+    height: 100%;
+    padding: 30px;
+    box-shadow: inset 0 4px 3px -3px rgb(0 0 0 / 10%),
+      inset 0 4px 2px -2px rgb(0 0 0 / 7%);
+    transition: all 0.3s;
+  }
+  
+  .mobile-menu img {
+    width: 40px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .mobile-menu a {
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .mobile-menu a:hover {
+    color: var(--color-primary);
+  }
+  
+  .mobile-menu div {
+    margin-top: 20px;
+  }
+  
+  .mobile-menu div a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .hidden {
+    transform: translateX(100%);
+  }
+  
+  .no-scroll {
+    overflow: hidden;
+  }
+  @media (max-width:768px){
+    .hamburger {
+        display: block;
+      }
+      .fbm,
+      .inm,
+      .twm{
+    height: 40px !important;
+  }
+  .fb,
+.in,
+.tw{
+   display: none;
+}
+  }

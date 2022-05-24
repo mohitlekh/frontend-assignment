@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEKHLE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/0c/32/97/0c3297f3516a415219c7e89e16a4a3d2.jpg">
+</head>
+<body>
+    <div class="headerTitle">
+        <img class="logo" src="https://i.pinimg.com/736x/0c/32/97/0c3297f3516a415219c7e89e16a4a3d2.jpg"></img>
+        DEKHLE
+        <div class="social_media">
+            <a href="#"><img src="./images/fblogo.png" alt="fblogo" class="fb"></a>
+            <a href="#"><img src="./images/twitterlogo.png" alt="twitterlogo" class="tw"></a>
+            <a href="#"><img src="./images/instalogo.png" alt="instalogo" class="in"></a>
+        </div>
+        <button type="button" class="hamburger" id="menu-btn">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+          <div class="mobile-menu hidden" id="menu">
+                <a href="#"><img src="./images/fblogo.png" alt="fblogo" class="fbm"></a>
+                <a href="#"><img src="./images/instalogo.png" alt="instalogo" class="inm"></a>
+                <a href="#"><img src="./images/twitterlogo.png" alt="twitterlogo" class="twm"></a>
+            <div class="mobile-menu-bottom">
+            </div>
+          </div>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col col_left">
+            <img src="./images/SOUL-removebg-preview.png" alt="pic" class="img_left">
+          </div>
+          <div class="col col-right">
+            <div class="signUp">
+                <div class="formTitle">
+                    Sign In !!
+                    <p id="signInMsg"></p>
+                </div>
+                <div class="userName">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" required>
+                </div>
+                <div class="userPass">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                </div>
+                <div class="loginBtn">
+                    <button type="submit" class="btn btn-primary" id="name" value="submit">Submit</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -2,6 +2,10 @@
 body{
    color: #093545;
 }
+.body-color-dark{
+  background-color: rgba(25, 53, 53, 0.729);
+  color: aliceblue;
+}
 .headerTitle{
     width: 100%;
     display: flex;
@@ -125,6 +129,13 @@ body{
     border: 1px;
     background-color: #20df8061;
     background-blend-mode: soft-light;
+}
+.btn-theme{
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  background-blend-mode: soft-light;
+
 }
 
 @media (max-width:680px){
@@ -265,3 +276,4 @@ body{
    display: none;
 }
   }
+
